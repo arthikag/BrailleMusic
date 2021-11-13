@@ -1,4 +1,12 @@
 <h1>Braille Music</h1>
+
+<img
+src=“BMlogo2.png.jpg”
+raw=true
+alt=“Subject Pronouns”
+style=“margin-right: 10px;”
+/>
+
 ![alt text](https://github.com/arthikag/BrailleMusic/blob/main/BMlogo2.png?raw=true)
 <h1>Purpose.</h1>
 <p>
