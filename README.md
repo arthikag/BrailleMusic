@@ -1,7 +1,7 @@
 <h1>Braille Music</h1>
 
 <img
-src=“BMlogo2.png”
+src=“BMlogo2.png.jpg”
 raw=true
 alt=“Braille Music Logo”
 style=“margin-right: 10px;”
