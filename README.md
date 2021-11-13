@@ -1,9 +1,9 @@
 <h1>Braille Music</h1>
 
 <img
-src=“BMlogo2.png”
+src=“BMlogo2.png.jpg”
 raw=true
-alt=“Braille Music Logo”
+alt=“Subject Pronouns”
 style=“margin-right: 10px;”
 />
 
@@ -16,16 +16,17 @@ Any person writing music uses music notation software. Music software to compose
 It all starts with a MuseScore file. We picked this file type as a starting point because of how widely used it is within the world of music. Through our program the MuseScore file is converted to a musicxml file. After that we parse the musical data and generate a BRF file according to Brailles music notation. BRF files, endorsed by the National Library Service for the blind and deaf, are made specifically to be embossed by Braille printed.
 </p>
 Credit: https://github.com/markomanninen/pybrl, helped convert from ASCII to braille.
+
 <img
 src=“old.jpg”
 raw=true
-alt=“Braille Music Logo”
+alt=“Subject Pronouns”
 style=“margin-right: 10px;”
 />
 
 <img
 src=“new.jpg”
 raw=true
-alt=“Braille Music Logo”
+alt=“Subject Pronouns”
 style=“margin-right: 10px;”
 />
