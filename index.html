@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Braille music</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.headerimg{ width: 750px; height: 500px;margin-left:200px}
+.braillepic{width: 190px; height: 150px; margin: 0 auto; position: absolute}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Foss Hack 2021</b><br>Braille music</br></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Upload Files</a>
+  </div>
+</nav>
+
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px;margin-right:0px;background-color:#fdca45; color:rgb(5, 90, 139)">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:0px" id="showcase">
+    <img src="braillepic.png" class="braillepic" alt="Fancy photo of random braille">
+    <img src="BMlogo2.png" class="headerimg" alt="Braille Music, or visually impaired sheet music">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="braillepic1.PNG" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+    </div>
+
+    <div class="w3-half">
+      <img src="braillepic2.PNG" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Purpose  -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-darkblue"><b>Purpose.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(5, 90, 139)" class="w3-round">
+    <p></p>
+    <p>Any person writing music uses music notation software. Music software to composers is like an IDE to a programmer. Currently programs like MuseScore, which allow artist to share their sheet music to the world, are not inclusive to the visually impaired.
+       As a result, those lacking sight are forced to purchase expensive, slow, and outdated software or pay an expert to manually trancribe their sheet music. To solve this problem we have created Braille Music, a software that automates
+       the process of transcription from sheet music to Braille. With Braille Music people can now print out Braille sheet music at no cost.
+    </p>
+  </div>
+  
+  <!-- Behind the scenes -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-darkblue"><b>Behind The Scenes.</b></h1>
+    <hr style="width: 50px;border:5px solid rgb(5, 90, 139)" class="w3-round">
+    <p></p>
+    <p>It all starts with a MuseScore file. We picked this file type as a starting point because of how widely used it is within the world of music. Through our program the MuseScore file is converted to a musicxml file. After that we parse the musical data and 
+       generate a BRF file according to Brailles music notation. BRF files, endorsed by the National Library Service for the blind and deaf, are made specifically to be embossed by Braille printed.
+    </p>
+    <p><b>Meet the team</b>:
+    <br></br></p>
+    
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="arshath.jpg"  style="width:100%; height:70%">
+        <div class="w3-container">
+          <h3>Arshath B</h3>
+          <p class="w3-opacity">Coder</p>
+          <p>Can do an amazing codes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="arthika.jpg"  style="width:100%; height: 70%">
+        <div class="w3-container">
+          <h3>Arthika G</h3>
+          <p class="w3-opacity">Coder</p>
+          <p>Still learning new languages.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="w3-col m3 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="priya.jpg"  style="width:100%; height:70%">
+        <div class="w3-container">
+          <h3>PriyaDharshini B</h3>
+          <p class="w3-opacity">Coder</p>
+          <p>Doing great work and coding.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  <!-- Upload -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-darkblue"><b>Upload Files.</b></h1>
+    <hr style="width:50px;border:5px solid rgb(5, 90, 139)" class="w3-round">
+    <form action="/action_page.php" target="_blank" onsubmit="saveFile()">
+      <div class="w3-section">
+        
+      <div class="w3-section">
+        <label>Select the sheet you want to convert into Braille</label>
+        <input id="input" onChange = "getName()" class="w3-input w3-border" type="file" name="Choose file" required>
+      </div>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a  title="W3.CSS" target="_blank" class="w3-hover-opacity">our brains</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+function getName(){
+  var fileName = document.getElementById('input').value;
+  const fileEnd = fileName.split("\\");
+  console.log(fileEnd[fileEnd.length-1]);
+}
+</script>
+
+</body>
+</html>
