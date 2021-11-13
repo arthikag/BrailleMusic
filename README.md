@@ -12,16 +12,5 @@ It all starts with a MuseScore file. We picked this file type as a starting poin
 </p>
 Credit: https://github.com/markomanninen/pybrl, helped convert from ASCII to braille.
 
-<img
-src=“old.jpg”
-raw=true
-alt=“Subject Pronouns”
-style=“margin-right: 10px;”
-/>
-
-<img
-src=“new.jpg”
-raw=true
-alt=“Subject Pronouns”
-style=“margin-right: 10px;”
-/>
+![Test Image 3](/old.jpg)
+![Test Image 3](/new.jpg)
